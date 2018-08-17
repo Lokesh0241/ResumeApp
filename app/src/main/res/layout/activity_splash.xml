@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lokesh.resumeapp.Activity.SplashActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="श्री"
+        android:textColor="#D4AF37"
+        android:layout_centerHorizontal="true"
+        android:textSize="80sp"/>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/splash"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_above="@+id/tvTamboliSamajh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHREE SURYAVANSHI KUMRAWAT"
+        android:textSize="20sp"
+        android:textColor="#D4AF37"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvTamboliSamajh"
+        android:layout_above="@+id/tvCopyRight"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMBOLI  SOSAYTI"
+        android:textSize="18sp"
+        android:textColor="#D4AF37"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tvCopyRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="#222222"
+        android:textSize="10sp"
+        android:text="Copyright © 2018 Aman Solutions. All rights "/>
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lokesh.resumeapp.Activity.OtpActivity">
+
+    <com.chaos.view.PinView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="12345"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:cursorVisible="false"
+        app:cursorColor="#000000"
+        app:cursorWidth="2dp"
+        app:itemCount="5"
+        android:textStyle="bold"
+        app:itemHeight="48dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="36dp"
+        app:lineColor="#000000"
+        app:viewType="line" />
+
+    <RelativeLayout
+        android:id="@+id/rlNextbtn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/next_btn_bg_black">
+
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_left"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rlNextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.00"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCopyRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="#222222"
+        android:textSize="10sp"
+        android:text="Copyright © 2018 Aman Solutions. All rights "/>
+
+
+</RelativeLayout>

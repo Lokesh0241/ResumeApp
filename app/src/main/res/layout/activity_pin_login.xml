@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lokesh.resumeapp.Activity.PinLoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginBottom="40dp"
+            android:layout_above="@+id/etPin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Please enter 4 Digit PIN"/>
+
+        <EditText
+            android:id="@+id/etPin"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Pin"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:maxLength="4"
+            android:textColor="#222222"
+            android:textColorHint="#222222"
+            android:background="@null"/>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/etPin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="0.5dp"
+            android:background="#222222"/>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/view"
+            android:tag="tag_send"
+            android:id="@+id/rlNextbtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/next_btn_bg">
+
+
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_above="@+id/tvCopyRight"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvCreateNewPin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE NEW PIN"
+            android:textColor="#222222"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvCopyRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="#222222"
+            android:textSize="10sp"
+            android:text="Copyright © 2018 Aman Solutions. All rights "/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
